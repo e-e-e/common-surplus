@@ -3,8 +3,8 @@ require('dotenv').config();
 const fetch = require('node-fetch');
 const uuid = require('uuid');
 
-const baseUrl = process.env.TW_BASE_URL;
-const apiToken = process.env.API_TOKEN;
+const baseUrl = process.env.TW_BASE_URL_TEST;
+const apiToken = process.env.API_TOKEN_TEST;
 
 function getProfiles() {
   return fetch(`${baseUrl}/v1/profiles`, {

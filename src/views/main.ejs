@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<header><h1>Wage Commoning</h1></header>
+<main>
+    <section class="total-section">
+        <div>Current Surplus</div>
+        <div><span class="total"><%= total %></span></div>
+    </section>
+    <div class="astrix">*</div>
+    <div class="info">*This is the total surplus available at {INSERT TIME}. It will be redistributed evenly to {X} number of participants at {INSERT DATE AND TIME OF NEXT DISTRIBUTION}.</div>
+</main>
+<script type="application/javascript">
+    var astrix = document.querySelector('.astrix');
+    var x = Math.random() * window.innerWidth * 0.3;
+    var y = Math.random() * window.innerHeight * 0.3;
+    astrix.style.transform = 'translate(' + x + 'px ,' + y + 'px)'
+</script>
+</body>
+</html>
